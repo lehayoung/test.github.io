@@ -1,0 +1,266 @@
+* {margin: 0;padding: 0;}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    min-width: 1180px;
+    overflow-x: hidden;
+    font-family: "Gothic A1", sans-serif;
+}
+body
+, html {height: 100%;}
+
+
+
+
+
+/* header */
+
+header { 
+    width: 100%;
+  
+    margin: auto;
+  max-width: 1920px; 
+    text-align: center;
+    /* width: 1920px; */
+    height: 100px; 
+    position: relative;
+    border-top: 5px solid #0058A3;
+    height: 100px;
+
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+margin-bottom: 40px;}
+
+.inner-area {
+    margin: auto;
+    text-align: center;
+    max-width: 1920px;
+    width: 1920px;
+}
+.top-area {
+    width: 1920px; height: 95px;
+    display: flex;
+
+}
+.nav-area {
+    display: flex;
+    margin: auto 1082px auto 372px ;
+    margin-top: 36px;
+    width: 800px;height: 45px;
+    
+}
+.nav-area ul li {
+    margin-left: 36px;
+    float: left;
+    font-size: 16px;
+    
+}
+.gnb {
+    display: flex;
+    margin: -24px;
+    margin-left: 130px;
+}
+
+.nav-area, .search-area {
+   align-items: center;
+    text-align: center;
+}
+.search-area {
+    margin: -45px 372px 33px 1167px;
+    width: 500px;height: 35px;
+    float:right;
+    position: relative;
+    display: flex;
+    align-items: center;
+   }
+.search-area ul li {
+    margin-left: 16px;
+}
+.search-menu {
+    display: flex;
+    width: 200px; height: 35px;
+    /* margin-left: 10px; */}
+
+
+/* logo */
+img {
+    display: block;
+    margin-right: 10px;
+}
+h1 { 
+    width: 500px;
+    height: 45px;
+    margin-right: 40px;
+;}
+
+/* 서치폼 */
+.search-form {
+        width: 231px;
+        height: 35px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+}
+.search-submit {
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+
+
+  /* 제품명 */
+
+  .main {
+      margin: 40px auto;
+      width: 1280px; 
+      height: 560px;
+      display: flex;
+      padding-bottom: 20px;
+      border-bottom: 1px #d4d4d4 solid;
+  }
+  .cimgu {
+      width: 300px;height: 24px;
+      display: flex;
+  }
+  /* .buy {
+      width: 387px; height: 68px;
+      border-radius: 40px;
+      background-color: #0058A3;
+      margin-right: 26px;
+  } */
+  
+  .buy-box {
+     
+      margin-bottom: 40px;
+      display: flex;
+  }
+  .b-menu-01 {
+      margin-bottom: 45px;
+      display: flex;
+  }
+  .bed {
+      margin-left: 28px;
+  }
+  .price {
+      margin-top: 30px;
+  }
+  .star {
+      margin-top: 5px;
+      margin-left: 5px;
+      margin-bottom: 30px;
+      color: #a09d9d;
+  }
+  .buy a {
+      margin-top: 114px;
+      margin-right: 26px;
+  }
+  .heart {
+      width: 68px; height: 68px;
+  }
+
+  /* 제품 설명 */
+
+  .box-01 {
+      text-align: center;
+      margin: 140px auto; 
+      width: 775px; height: 205px;
+     
+
+  }
+  .box-01 h2 {
+      text-align: center;
+  }
+
+  .box-02 {width: 1007px;height: 663px;
+           margin: 140px auto; 
+          
+  }
+  .box-02 h2 {
+      text-align: center;
+  }
+  .big-p {
+      width: 1374px;height: 3925px;
+      margin: 300px auto;
+  }
+  .big-p h2 {
+    text-align: center;
+  }
+  .big-p-01 {
+      display: flex;
+  }
+  .big-p img {
+      position:relative;
+      margin: 100px auto; 
+      text-align: center;
+      
+  }
+
+  /* 유사한 제품 */
+ .bestitem-wrap {width: 1920px; height: 570px;
+    margin: 140px auto;
+
+ }
+ .bestitem-wrap h2 {
+     border-bottom: #a09d9d solid 1px;
+     margin-bottom: 40px;
+     font-size: 30px;
+    }
+.bestitem-list {
+    display: flex;
+}
+.bestitem-list li{
+    margin: 38px;
+}
+h2 {
+    text-align:left;
+    margin-bottom: 30px;}
+
+    /* footer */
+    footer {
+        
+        margin-top: 40px;
+        padding: 90px 0;
+        border-top: 1px solid #e5e5e5;
+      }
+      .f-bottom ,.f-customer {
+          display: flex;
+      }
+      .f-list {
+          display: flex;
+          
+      }
+      .f-list li {
+          margin-right: 30px;
+      }
+      .f-info {
+        margin-top: 87px;
+        margin-left: 372px;
+          display: flex;
+      }
+      .f-info img {
+          margin-right: 30px;
+          width: 129px; height: 24px;
+
+      }
+      .f-customer {
+         margin-top: 87px;
+         margin-left: 372px;
+      }
+      .f-top {
+          margin: auto;
+      }
+      .f-bottom {
+        margin: auto 20px;
+      }
+
+      

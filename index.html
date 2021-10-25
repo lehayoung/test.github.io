@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikea</title>
+    <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="images/IKEA (1).svg">
+
+</head>
+<body>
+    <header>
+        <div class="top-area">
+            <div class="inner-area">
+                <nav class="nav-area">
+                    <h1><img src="images/ikea-logo.jpg" alt="logo-area"></h>
+                    <ul class="gnb">
+                        <li><a href="#">침실</a></li>
+                        <li><a href="#">거실</a></li>
+                        <li><a href="#">주방</a></li>
+                        <li><a href="#">욕실</a></li>
+                        <li><a href="#">소품</a></li>
+                    </ul>
+                </nav>
+                <div class="search-area">
+                    <form class="search-form">
+                        <label><input type="search" id="search"></label>
+                        <button class="search-submit"><img src="images/search-icon.jpg" alt="search-icon"></button>
+                      </form>
+                      <ul class="search-menu">
+                        <li><a href="">cart</a></li>
+                        <li><a href="">sign</a></li>
+                        <li><a href="">sign up</a></li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section>
+     <!--Slide-->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="images/slide-01.jpg" style="width: 100%;">
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/slide-02.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/slide-03.jpg" style="width: 100%;">
+    </div>
+
+
+    <!-- 이전 다음 버튼-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- 하단 위치 점-->
+  <div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n){
+      slideIndex += n;
+      showSlides(slideIndex);
+    }
+
+    function currentSlide(n){
+      slideIndex = n;
+      showSlides(slideIndex);
+    }
+
+    function showSlides(n){
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      if(n < 1) { slideIndex = slides.length; }
+      if(n > slides.length) { slideIndex = 1; }
+
+      for(let i= 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+  <!-- best item -->
+
+  <div class="bestitem-wrap">
+      <div class="best-t">
+    <h2 class="main-title">BEST ITEM</h2>
+    <h3 class="s-title">인기상품들을 모아봤어요</h3></div>
+    <ul class="bestitem-list">
+      <li>
+        <a href="#">
+          <img src="images/bestitem-01.png" alt="">
+          <p class="c-name">까사미아 플리츠 그린소파</p>
+          <p class="price">59,900</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/bestitem-02.png" alt="">
+          <p class="c-name">화이트와인잔/CL</p>
+          <p class="price">3,900</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/bestitem-03.png" alt="">
+          <p class="c-name">코모도 1인 리클라이너 GY</p>
+          <p class="price">99,000</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/bestitem-04.png" alt="">
+          <p class="c-name">올인원 오디오 시스템</p>
+          <p class="price">99,000</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- best item end -->
+
+  <!-- new arrivals -->
+  <div class="newarr-wrap">
+  <div class="newarr-t">
+    <h2 class="main-title">NEW ARRIVALS</h2>
+    <h3 class="s-title">새로운 상품들을 만나보세요</h3>
+</div>
+<div class="arr-inner-wrap">
+  <ul class="newarr-list">
+    <li>
+      <a href="#">
+        <img src="images/arr-01.png" alt="">
+        <p class="n-name">어린이식기놀이세트</p>
+        <p class="price">49,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-02.png" alt="">
+        <p class="n-name">리넨슬림의자L</p>
+        <p class="price">29,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-03.png" alt="">
+        <p class="n-name">HÖSTKVÄLL 회스트크벨</p>
+        <p class="price">14,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-04.png" alt="">
+        <p class="n-name">코모도 1인 리클라이너 GY</p>
+        <p class="price">99,000</p>
+      </a>
+    </li>
+  </ul>
+
+
+<ul class="new-arr-list">
+    <li>
+      <a href="#">
+        <img src="images/arr-05.png" alt="">
+        <p class="n-name">린넨유리탁자</p>
+        <p class="price">49,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-06.png" alt="">
+        <p class="n-name">화이트블랙샴푸통</p>
+        <p class="price">29,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-07.png" alt="">
+        <p class="n-name">옐로우피규어전시대</p>
+        <p class="price">14,900</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/arr-08.png" alt="">
+        <p class="n-name">레드세탁&빨래통</p>
+        <p class="price">19,000</p>
+      </a>
+    </li>
+  </ul></div>
+
+
+</div>
+<!-- arr end -->
+
+<!-- limited edition-->
+<div class="lim-area">
+    <div class="lim-inner">
+    <div class="gray-box">
+        <div class="lim-edi">
+            <h2>LIMITED EDITION</h2>
+            <p>HÖSTKVÄLL 회스트크벨 컬렉션으로 연출하는
+                아늑한 분위기의 우리집 거실</p>
+        </div>
+    </div>
+    <ul class="lim-img">
+        <li><a href="#"><img src="images/lim-01.png" alt="limited"></a></li>
+        <li><a href="#"><img src="images/lim-02.png" alt="limited"></a></li>
+        <li><a href="#"><img src="images/lim-03.png" alt="limited"></a></li>
+        <li><a href="#"><img src="images/lim-04.png" alt="limited"></a></li>
+    </ul>
+    </div>
+</div>
+<!-- lim end -->
+
+        <!-- event -->
+
+        <div class="eve-wrap">
+            <h2 class="eve-title">EVENT & PROMOTION</h2>
+        
+
+        <div class="eve-area">
+            <div class="lim-inner">
+            <div class="gray-box-1">
+                <div class="eve-pro">
+                    <h2>이유 있는 가격, IKEA추천 제품</h2>
+                    <p>IKEA는 더 많은 사람들이 좋은 품질과 착한 가격,
+                        <br> 실용성 있는 디자인의 제품들로 IKEA의 홈퍼니싱을 경험했으면 해요.
+                        <br>
+                        제품 전문가가 추천하는 이유 있는 가격의 제품들을 언제든 만나보세요</p>
+                </div>
+            </div>
+            <ul class="lim-img">
+                <li><a href="#"><img src="images/event-1.png" alt="limited"></a></li>
+                <li><a href="#"><img src="images/event-2.png" alt="limited"></a></li>
+                <li><a href="#"><img src="images/event-3.png" alt="limited"></a></li>
+                <li><a href="#"><img src="images/event-4.png" alt="limited"></a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 지속가능한 내일을 위한 솔루션 -->
+    <div class="sol-wrap">
+        <div class="best-t">
+      <h2 class="main-title">지속가능한 내일을 위한 솔루션</h2>
+      <h3 class="s-title">건강한 지구를 위해 실천해요</h3></div>
+      <ul class="sol-list">
+        <li>
+          <a href="#">
+            <img src="images/솔루션-1.png" alt="지속가능한 내일을 위한 솔루션 물아끼기">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/솔루션-2.png" alt="지속가능한 내일을 위한 솔루션 재활용">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/솔루션-3.png" alt="지속가능한 내일을 위한 솔루션 전기 아끼기">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/솔루션-4.png" alt="지속가능한 내일을 위한 솔루션 오래쓰는 가구">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    </section>
+    <footer>
+        <div class="f-top ">
+     
+          <div class="f-bottom">
+            <div class="f-info">
+              <img src="images/ikea-logo.jpg" alt="로고">
+              <p>© Inter IKEA Systems B.V 1999-2021<br>
+                개인정보처리방침 쿠키 정책 쿠키 설정 웹사이트 이용약관 Responsible disclosure<br>
+                KEA 코리아<br>
+                주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점<br>
+                사업자 등록번호 : 106-86-82871 사업자정보확인.<br>
+                통신판매업 신고 : 2018-경기광명-0209</p>
+            </div>
+            <div class="f-customer">
+              <ul class="f-list">
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">쿠키정책</a></li>
+                  <li><a href="#">쿠키설정</a></li>
+                  <li><a href="#">웹사이트 이용약관</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
